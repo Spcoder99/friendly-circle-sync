@@ -63,8 +63,8 @@ const Contact = () => {
 
         <div data-animate className="mt-10 flex items-center justify-center gap-4">
           {[
-            { icon: Github, href: "https://github.com", label: "GitHub" },
-            { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+            { icon: Github, href: "https://github.com/dev-portfolio", label: "GitHub" },
+            { icon: Twitter, href: "https://twitter.com/dev_portfolio", label: "Twitter" },
           ].map((s) => (
             <a
               key={s.label}
