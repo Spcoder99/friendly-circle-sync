@@ -1,16 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useCallback } from "react";
+import LoadingScreen from "@/components/portfolio/LoadingScreen";
+import CursorGlow from "@/components/portfolio/CursorGlow";
+import Navigation from "@/components/portfolio/Navigation";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
+import Skills from "@/components/portfolio/Skills";
+import Projects from "@/components/portfolio/Projects";
+import AIIntegration from "@/components/portfolio/AIIntegration";
+import FutureVision from "@/components/portfolio/FutureVision";
+import Contact from "@/components/portfolio/Contact";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const [loaded, setLoaded] = useState(false);
+  const handleComplete = useCallback(() => setLoaded(true), []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <>
+      {!loaded && <LoadingScreen onComplete={handleComplete} />}
+      <CursorGlow />
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <AIIntegration />
+        <FutureVision />
+        <Contact />
+      </main>
+      {/* Footer */}
+      <footer className="border-t border-border/40 py-8 text-center">
+        <p className="text-xs text-muted-foreground">
+          © {new Date().getFullYear()} · Built with precision & passion
+        </p>
+      </footer>
+    </>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
