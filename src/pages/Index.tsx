@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { useGsapScrollTrigger } from "@/hooks/useGsap";
 import LoadingScreen from "@/components/portfolio/LoadingScreen";
 import CursorGlow from "@/components/portfolio/CursorGlow";
 import Navigation from "@/components/portfolio/Navigation";
@@ -13,6 +14,8 @@ import Contact from "@/components/portfolio/Contact";
 const Index = () => {
   const [loaded, setLoaded] = useState(false);
   const handleComplete = useCallback(() => setLoaded(true), []);
+
+  useGsapScrollTrigger();
 
   return (
     <>
@@ -29,9 +32,10 @@ const Index = () => {
         <Contact />
       </main>
       {/* Footer */}
-      <footer className="border-t border-border/40 py-8 text-center">
-        <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} · Built with precision & passion
+      <footer className="relative border-t border-border/20 py-10 text-center">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-1/2 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+        <p className="text-xs text-muted-foreground/60">
+          © {new Date().getFullYear()} · Crafted with precision & passion
         </p>
       </footer>
     </>
