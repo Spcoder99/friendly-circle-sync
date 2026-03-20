@@ -23,6 +23,8 @@ const projects = [
     ],
     accent: "from-primary to-accent",
     number: "01",
+    live: "https://talentiq-uqqz.onrender.com",   // ✅ ADD THIS
+    github: "https://github.com/your-username/skill-iq", // ✅ ADD THIS
   },
   {
     title: "GitHub Clone 2.0 With Upcoming AI capabilities",
@@ -42,6 +44,8 @@ const projects = [
     ],
     accent: "from-accent to-primary",
     number: "02",
+    live: "https://frontend-rt1r.onrender.com",   // ✅ ADD THIS
+    github: "https://github.com/your-username/skill-iq", // ✅ ADD THIS
   }
 ];
 
@@ -146,13 +150,13 @@ const Projects = () => {
               {/* Links */}
               <div className="mt-6 flex gap-4">
                 <a
-                  href="#"
+                  href={project.live}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition-all duration-200 hover:text-primary"
                 >
                   <ExternalLink className="h-3.5 w-3.5" /> Live Demo
                 </a>
                 <a
-                  href="#"
+                  href={project.github}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition-all duration-200 hover:text-primary"
                 >
                   <Github className="h-3.5 w-3.5" /> Source Code
