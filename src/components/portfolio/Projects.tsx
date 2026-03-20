@@ -5,13 +5,43 @@ import { gsap } from "@/hooks/useGsap";
 
 const projects = [
   {
-    title: "MERN AI Video Calling Interview Platform",
+    title: "SKILL_IQ — AI Video Interview Platform",
     description:
-      "Real-time video interviews with collaborative coding, AI-powered assistance, and intelligent evaluation — built end-to-end with MERN stack and modern AI APIs.",
-    tech: ["MERN Stack", "Stream Video SDK", "Stream Chat", "OpenAI API", "Gemini API", "Cohere", "Ollama"],
-    features: ["Real-time video interviews", "Collaborative coding", "AI assistance"],
+      "A full-stack MERN-based real-time interview platform with live video calling, collaborative coding environment (Monaco Editor), and AI-powered hints & solutions. Supports public/private sessions, real-time chat, and multi-LLM integration.",
+    tech: [
+      "React.js (Vite)", "Tailwind CSS", "DaisyUI", "ShadCN UI",
+      "TanStack Query", "Monaco Editor", "Node.js", "Express.js",
+      "MongoDB", "Mongoose", "Inngest", "Clerk",
+      "Stream Video SDK", "Stream Chat",
+      "OpenAI API", "Gemini API", "Cohere AI", "Ollama",
+    ],
+    features: [
+      "Real-time video interviews",
+      "Live code execution",
+      "AI hints & optimal solutions",
+      "Private sessions with invite codes",
+    ],
     accent: "from-primary to-accent",
     number: "01",
+  },
+  {
+    title: "GitHub Clone 2.0",
+    description:
+      "A full-stack MERN recreation of GitHub with repository management, branching, file handling via AWS S3, JWT authentication, Redux state management, and industry-level architecture. Deployed on Render with MongoDB Atlas.",
+    tech: [
+      "React.js", "Tailwind CSS", "ShadCN UI", "Material UI",
+      "Redux", "React Router DOM", "Lucide React", "Font Awesome",
+      "Node.js", "Express.js", "MongoDB", "Mongoose",
+      "JWT", "bcrypt", "Axios", "AWS S3",
+    ],
+    features: [
+      "Full repository system",
+      "AWS S3 file storage",
+      "JWT auth & security",
+      "Industry-level architecture",
+    ],
+    accent: "from-accent to-primary",
+    number: "02",
   },
   {
     title: "AI Background Remover",
@@ -19,24 +49,15 @@ const projects = [
       "An AI-powered image processing tool that removes backgrounds with high precision, delivering clean cutouts with a fast and intuitive interface.",
     tech: ["AI", "Image Processing", "React", "Node.js"],
     features: ["AI-based processing", "Clean UI", "Fast response"],
-    accent: "from-accent to-primary",
-    number: "02",
-  },
-  {
-    title: "Developer Portfolio",
-    description:
-      "A 3D, animation-rich portfolio that doubles as a personal brand showcase — featuring immersive visuals and interactive storytelling.",
-    tech: ["React", "Three.js", "Framer Motion", "Tailwind CSS"],
-    features: ["3D visuals", "Scroll animations", "Personal branding"],
     accent: "from-primary/80 to-accent/80",
     number: "03",
   },
   {
-    title: "GitHub Clone 2.0",
+    title: "Developer Portfolio",
     description:
-      "A full-stack recreation of GitHub's core functionality — repositories, branching, and a realistic developer workflow simulation.",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    features: ["Full-stack architecture", "Repository system", "Developer workflow"],
+      "A 3D, animation-rich portfolio featuring React Three Fiber, GSAP ScrollTrigger animations, and immersive visual storytelling — the site you're viewing right now.",
+    tech: ["React", "Three.js", "GSAP", "Framer Motion", "Tailwind CSS"],
+    features: ["3D visuals", "Scroll animations", "Personal branding"],
     accent: "from-accent/80 to-primary/80",
     number: "04",
   },
