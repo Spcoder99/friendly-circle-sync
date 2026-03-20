@@ -8,9 +8,9 @@ const NeuralSphere = lazy(() => import("./NeuralSphere"));
 const ParticleField = lazy(() => import("./ParticleField"));
 
 const stats = [
-  { value: "15+", label: "Projects" },
-  { value: "5+", label: "AI Systems" },
-  { value: "2+", label: "Years Building" },
+  { value: "5+", label: "Projects" },
+  { value: "3+", label: "AI Systems" },
+  { value: "1+", label: "Years Building" },
 ];
 
 const Hero = () => {
