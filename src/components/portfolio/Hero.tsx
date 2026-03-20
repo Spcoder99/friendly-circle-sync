@@ -10,7 +10,7 @@ const ParticleField = lazy(() => import("./ParticleField"));
 const Hero = () => {
   const containerRef = useRef<HTMLElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const subtextRef = useRef<HTMLParagraphOf>(null);
+  const subtextRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
