@@ -87,8 +87,8 @@ const About = () => {
           {/* Stats */}
           <div className="mt-10 grid grid-cols-3 gap-6">
             {[
-              { value: "15+", label: "Projects Built" },
-              { value: "5+", label: "AI Integrations" },
+              { value: "5+", label: "Projects Built" },
+              { value: "3+", label: "AI Integrations" },
               { value: "∞", label: "Lines of Code" },
             ].map((stat) => (
               <div key={stat.label} className="text-center lg:text-left">
