@@ -8,22 +8,52 @@ const categories = [
     emoji: "🔹",
     items: [
       "Web Development", "Software Development", "Full-Stack Development",
-      "Machine Learning", "Artificial Intelligence (AI)", "AIML", "Communication",
+      "Machine Learning", "Artificial Intelligence (AI)", "AIML",
+      "Communication", "Engineering", "MERN Stack",
     ],
   },
   {
-    title: "Technologies",
-    emoji: "⚡",
+    title: "Languages",
+    emoji: "💻",
     items: [
-      "React.js", "Next.js", "Node.js", "MongoDB", "MySQL", "JavaScript",
-      "Java", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "GitHub",
+      "JavaScript", "Java", "C (Programming Language)",
+      "HTML", "CSS", "TypeScript",
+    ],
+  },
+  {
+    title: "Frontend",
+    emoji: "🎨",
+    items: [
+      "React.js", "Next.js", "Tailwind CSS", "Bootstrap",
+      "DaisyUI", "ShadCN UI", "Material UI", "Framer Motion",
+      "Lucide React", "Font Awesome",
+    ],
+  },
+  {
+    title: "Backend & Database",
+    emoji: "⚙️",
+    items: [
+      "Node.js", "Express.js", "MongoDB", "Mongoose",
+      "MySQL", "Inngest", "AWS S3",
     ],
   },
   {
     title: "AI & Tools",
     emoji: "🤖",
     items: [
-      "OpenAI API", "Google Gemini API", "Cohere AI", "Ollama (Local LLMs)", "IBM WatsonX",
+      "OpenAI API", "Google Gemini API", "Cohere AI",
+      "Ollama (Local LLMs)", "IBM WatsonX", "LangChain",
+      "Generative AI", "Prompt Engineering",
+    ],
+  },
+  {
+    title: "Dev Tools & Libraries",
+    emoji: "🔧",
+    items: [
+      "GitHub", "Redux", "React Router DOM", "Axios",
+      "TanStack React Query", "JWT", "bcrypt",
+      "Clerk", "Stream Video SDK", "Stream Chat",
+      "Monaco Editor", "Vite",
     ],
   },
 ];
@@ -50,7 +80,6 @@ const Skills = () => {
     if (!gridRef.current) return;
 
     const ctx = gsap.context(() => {
-      // Stagger skill tags
       const tags = gridRef.current!.querySelectorAll(".skill-tag");
       gsap.fromTo(
         tags,
@@ -60,7 +89,7 @@ const Skills = () => {
           scale: 1,
           y: 0,
           duration: 0.6,
-          stagger: 0.03,
+          stagger: 0.02,
           ease: "back.out(1.4)",
           scrollTrigger: {
             trigger: gridRef.current,
@@ -70,7 +99,6 @@ const Skills = () => {
         }
       );
 
-      // Animate progress bars
       if (barsRef.current) {
         const bars = barsRef.current.querySelectorAll(".progress-fill");
         bars.forEach((bar) => {
@@ -109,7 +137,7 @@ const Skills = () => {
       </div>
 
       {/* Skill categories */}
-      <div ref={gridRef} className="mt-16 grid gap-10 md:grid-cols-3">
+      <div ref={gridRef} className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {categories.map((cat) => (
           <div key={cat.title}>
             <h3 className="mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-wider">
