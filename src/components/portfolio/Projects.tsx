@@ -25,7 +25,7 @@ const projects = [
     number: "01",
   },
   {
-    title: "GitHub Clone 2.0",
+    title: "GitHub Clone 2.0 With Upcoming AI capabilities",
     description:
       "A full-stack MERN recreation of GitHub with repository management, branching, file handling via AWS S3, JWT authentication, Redux state management, and industry-level architecture. Deployed on Render with MongoDB Atlas.",
     tech: [
@@ -42,25 +42,7 @@ const projects = [
     ],
     accent: "from-accent to-primary",
     number: "02",
-  },
-  {
-    title: "AI Background Remover",
-    description:
-      "An AI-powered image processing tool that removes backgrounds with high precision, delivering clean cutouts with a fast and intuitive interface.",
-    tech: ["AI", "Image Processing", "React", "Node.js"],
-    features: ["AI-based processing", "Clean UI", "Fast response"],
-    accent: "from-primary/80 to-accent/80",
-    number: "03",
-  },
-  {
-    title: "Developer Portfolio",
-    description:
-      "A 3D, animation-rich portfolio featuring React Three Fiber, GSAP ScrollTrigger animations, and immersive visual storytelling — the site you're viewing right now.",
-    tech: ["React", "Three.js", "GSAP", "Framer Motion", "Tailwind CSS"],
-    features: ["3D visuals", "Scroll animations", "Personal branding"],
-    accent: "from-accent/80 to-primary/80",
-    number: "04",
-  },
+  }
 ];
 
 const Projects = () => {
